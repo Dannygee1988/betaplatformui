@@ -29,11 +29,53 @@
             padding: 20px;
             background-color: #ecf0f1;
         }
+
+        .pill-menu {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .pill-menu ul {
+            list-style: none;
+        }
+
+        .pill-menu li {
+            margin-bottom: 10px;
+        }
+
+        .pill-menu a {
+            display: block;
+            padding: 12px 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .pill-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        .pill-menu a.active {
+            background-color: #3498db;
+        }
     </style>
 </head>
 <body>
     <aside class="sidebar">
-        <!-- Sidebar content will go here -->
+        <nav class="pill-menu">
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Billing</a></li>
+            </ul>
+        </nav>
     </aside>
 
     <main class="main-content">
